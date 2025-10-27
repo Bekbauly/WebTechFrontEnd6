@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 WEBTech</title>
+    <script src="JsAssik6.js" defer></script>
+    <link rel="stylesheet" href="6assikCss.css">
+</head>
+<body>
+    <p id="text">This is old text.</p>
+    <button onclick="changeText()">Change text</button>
+
+
+    <div id="box">HERE YOU CAN SEE CHANGES</div>
+    <button onclick="changeColor()">To change Color</button>
+    <button onclick="changeFont()">To change font size</button>
+
+
+    <ul id="list">
+        <li>Element</li>
+    </ul>
+    <button onclick="addItem()">To add item</button>
+    <button onclick="removeItem()">To remove item</button>
+    
+
+    <div id="square" onmouseover="changeColor2()" onmouseout="resetColor()">
+    </div>
+
+
+    <input type="text" id="input" onkeyup="showValue()">
+    <p id="output"></p>
+
+
+    <form onsubmit="return validateForm()">
+        <input id="name" placeholder="Name"><br>
+        <input id="email" placeholder="Email"><br>
+        <input id="password" placeholder="Password" type="password"><br>
+        <button type="submit">Submit</button>
+        </form>
+    <p id="error"></p>
+
+
+    <input id="taskInput" placeholder="Enter the task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+</body>
+</html>
